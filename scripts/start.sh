@@ -17,10 +17,13 @@ if [ ! -z $USERNAME ]; then
 		# delete password
 		passwd -d $USERNAME
 		echo "%wheel ALL=(ALL:ALL) ALL" >> /etc/sudoers
+		usermod --shell /usr/bin/zsh arch
 	fi
 else
 	HOMEDIR="/root"
 fi
+
+
 
 
 
