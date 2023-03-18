@@ -6,7 +6,9 @@ set -e
 pacman -Syu --noconfirm xorg-server \
 	wget tigervnc alacritty which \
 	i3-wm python-setuptools ttf-dejavu \
-	kitty zsh nano vim fish git
+	kitty zsh nano vim fish git \
+	zsh-syntax-highlighting zsh-autosuggestions \
+	locate
 
 # Install noVNC
 if [ "$DISABLE_NOVNC" != "true" ]; then
