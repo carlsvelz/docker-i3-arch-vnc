@@ -5,6 +5,7 @@ LABEL MAINTAINER="DCsunset"
 
 # copy directory contents to /scripts
 COPY ./scripts /scripts
+ADD ./kitty /home/arch/.config/kitty
 
 WORKDIR /root
 
