@@ -1,7 +1,7 @@
 ARG VERSION
 
 FROM archlinux:${VERSION:-latest}
-LABEL MAINTAINER="DCsunset"
+LABEL MAINTAINER="Z2h"
 
 # copy directory contents to /scripts
 COPY ./scripts /scripts
