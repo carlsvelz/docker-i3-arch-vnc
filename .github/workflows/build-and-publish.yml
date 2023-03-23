@@ -29,4 +29,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: dcsunset/i3-arch-vnc:latest,dcsunset/i3-arch-vnc:${{ steps.date.outputs.date }}
+          tags: z2hx/z2h-i3-arch-vnc:latest,z2hx/z2h-i3-arch-vnc:${{ steps.date.outputs.date }}

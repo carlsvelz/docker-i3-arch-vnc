@@ -1,6 +1,6 @@
-# docker-i3-arch-vnc
+# docker-z2h-i3-arch-vnc
 
-[![Docker Image Size](https://badgen.net/docker/size/dcsunset/i3-arch-vnc)](https://hub.docker.com/r/dcsunset/i3-arch-vnc)
+[![Docker Image Size](https://badgen.net/docker/size/z2hx/z2h-i3-arch-vnc)](https://hub.docker.com/r/z2hx/z2h-i3-arch-vnc)
 
 A minimum docker image of Arch Linux with i3wm and VNC support.
 
@@ -8,7 +8,7 @@ A minimum docker image of Arch Linux with i3wm and VNC support.
 ## Pull image
 
 ```
-docker pull dcsunset/i3-arch-vnc
+docker pull z2hx/z2h-i3-arch-vnc
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ docker pull dcsunset/i3-arch-vnc
 Simple usage:
 
 ```
-docker run -d --name i3-arch-vnc -p 5900:5900 -p 6080:6080 -e VNC_PASSWD=password -e USERNAME=arch dcsunset/i3-arch-vnc
+docker run -d --name z2h-i3-arch-vnc -p 5900:5900 -p 6080:6080 -e VNC_PASSWD=password -e USERNAME=arch z2hx/z2h-i3-arch-vnc
 ```
 
 On the first startup, this image will install the i3 related packages.
@@ -62,7 +62,7 @@ Besides, `init.sh` and `start.sh` can be customized as well.
 ## Build
 
 ```
-docker build -t i3-arch-vnc .
+docker build -t z2h-i3-arch-vnc .
 ```
 
 
