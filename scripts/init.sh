@@ -8,7 +8,7 @@ pacman -Syu --noconfirm xorg-server \
 	i3-wm python-setuptools ttf-dejavu \
 	kitty zsh nano vim fish git \
 	zsh-syntax-highlighting zsh-autosuggestions \
-	locate firefox
+	locate firefox neofetch lsd bat base base-devel exa
 
 # Install noVNC
 if [ "$DISABLE_NOVNC" != "true" ]; then
