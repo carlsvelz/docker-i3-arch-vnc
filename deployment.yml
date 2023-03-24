@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp
+spec:
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: z2hx/z2h-docker-arch
+        imagePullPolicy: Always
+        env:
+        - name: VNC_PASSWD
+          value: "password"
+        - name: USERNAME
+          value: "arch" 
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+      ports:
+      - name: noVCN
+        protocol: TCP
+        port: 6080
+        targetPort: 6080
+      - name: local
+        protocol: TCP
+        port: 5900
+        targetPort: 5900
+
+        
